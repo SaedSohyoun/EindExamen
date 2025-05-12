@@ -1,0 +1,240 @@
+/* Algemene body styling voor donkere modus */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  /* Donkere achtergrond */
+  color: #e0e0e0;
+  /* Lichtgrijze tekst voor beter contrast */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Hoofdtitel van de website */
+h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  /* Witte kleur voor de titel */
+  margin: 30px 0;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  /* Zachte schaduw */
+}
+
+/* Zoekveld in donkere modus */
+.search-input {
+  padding: 0.6rem;
+  /* Kleinere padding voor een compactere uitstraling */
+  width: 100%;
+  max-width: 600px;
+  border: 2px solid #333;
+  /* Donkere randkleur */
+  border-radius: 12px;
+  margin-bottom: 15px;
+  /* Kleinere marge */
+  font-size: 1rem;
+  /* Kleinere tekstgrootte */
+  background-color: #333;
+  /* Donkere achtergrond voor zoekveld */
+  color: #fff;
+  /* Witte tekstkleur */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  /* Groen wanneer gefocust */
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+/* Flexbox voor de content */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Projectkaarten styling (met subtiele neumorphism effecten) */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  /* Donkerder grijs voor de kaart */
+  border-radius: 12px;
+  padding: 15px;
+  /* Verklein de padding */
+  margin: 15px 0;
+  /* Verklein de marge tussen de kaarten */
+  max-width: 300px;
+  /* Voeg een maximale breedte toe om de kaart kleiner te maken */
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3), -4px -4px 12px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.4), -4px -4px 16px rgba(255, 255, 255, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Project titel styling */
+.project-card h2 {
+  font-size: 1.6rem;
+  /* Verklein de titel */
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Beschrijving van het project */
+.project-card p {
+  font-size: 0.9rem;
+  /* Verklein de tekst voor beschrijving */
+  color: #b0b0b0;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* YouTube video styling */
+.project-card iframe {
+  max-width: 100%;
+  /* Zorg ervoor dat de video breedte maximaal 100% van de kaart is */
+  height: 160px;
+  /* Maak de video kleiner door de hoogte te verlagen */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Knoppen voor bewerken en verwijderen */
+button {
+  padding: 12px 20px;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Bewerken knoppen styling */
+.edit-button {
+  background-color: #ff9d00;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #ff7700;
+  transform: scale(1.05);
+}
+
+/* Verwijderen knoppen styling */
+.delete-button {
+  background-color: #cd1500;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #f51900;
+  transform: scale(1.05);
+}
+
+/* Toevoegen knoppen styling */
+.save-button {
+  background-color: #008d05;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 100px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #009708;
+  transform: scale(1.05);
+}
+
+/* Afbeeldingsinvoer en preview in donkere modus */
+.image-input {
+  margin: 20px 0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #333;
+  border: 2px solid #555;
+  color: #fff;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+  max-height: 250px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Formulier styling (inputs in donkere modus) */
+.edit-input {
+  padding: 8px;
+  /* Kleinere padding voor compactere invoervelden */
+  width: 100%;
+  margin: 10px 0;
+  font-size: 0.9rem;
+  /* Kleinere tekstgrootte */
+  border: 2px solid #444;
+  border-radius: 8px;
+  background-color: #333;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.edit-input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+/* Algemeen responsief ontwerp */
+@media (max-width: 768px) {
+  .project-card {
+    padding: 15px;
+    margin: 15px 0;
+  }
+
+  .project-card iframe {
+    height: 160px;
+    /* Verklein de hoogte van de video voor kleinere schermen */
+  }
+
+  .search-input {
+    font-size: 1.1rem;
+  }
+
+  .project-card {
+    max-width: 100%;
+    /* Zorgt ervoor dat de kaart altijd past in de container */
+  }
+}
