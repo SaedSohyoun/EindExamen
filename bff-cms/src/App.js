@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>🎬 Film CMS</h1>
+      <h1>🎬 BFF-CMS</h1>
       <input
         type="text"
         placeholder="Zoek op titel..."
